@@ -1,0 +1,271 @@
+/*
+	.fitgrd - responsive grid system
+	open http://www.fitgrd.com for more information
+	download at https://github.com/jayalai/fitgrd
+	Licensed under GPL and MIT.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 20px;
+	color: #7d7d7d;
+	line-height: 22px;
+}
+
+p a {
+	border-bottom: 1px solid #afafaf;
+}
+
+b {
+	color: black;
+}
+
+.menu li {
+	color: #7d7d7d;
+}
+
+.menu li:hover {
+	/*font-weight: bold;
+	margin-left: -1px;*/
+	color: black;
+}
+
+
+a img {
+  border: none;
+}
+
+body{
+	font: 14px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	min-height: inherit;
+	background-color: #ffffff;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+
+/* just for demonstration - remove this */
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 99;
+}
+
+header .name {
+	position: fixed;
+	top: 50px;
+	z-index: -9;
+}
+
+.menu {
+	opacity: 0;
+	margin-top: -200px;
+	padding-top: 44px;
+	padding-bottom: 10px;
+}
+
+.menu:hover {
+	opacity: 1;
+	margin-top: 0;
+	-webkit-transition: opacity 0ms; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0ms;
+}
+
+.menu:hover + .name {
+	opacity: 0;
+	-webkit-transition: opacity 0ms; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0ms;
+}
+
+#wrapper {
+	margin-top: 200px;
+}
+
+.fg1,.fg2,.fg3,.fg4,.fg5,.fg6,.fg7,.fg8,.fg9,.fg10,.fg11,.fg12 {
+	padding: 0;
+	/*background: #333;*/
+	margin-bottom: 2%;
+	text-align: left;
+	color: #474747;
+}
+.fg-no-gutter > [class*="fg"] {
+	height: auto;
+	background: none;
+}
+.headline{
+	font-size: 2em;
+	background: none;
+	color: #333;
+	padding: 1em 0;
+}
+
+.logo {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+.rightnav {
+	position: fixed;
+	right: 70px;
+	top: -80px;	
+}
+
+.bottomnav {
+	position: fixed;
+	bottom: 20px;	
+}
+
+.bottomnav li {
+	float: left;
+	margin-right: 70px;
+	color: #7d7d7d;
+}
+
+li:hover {
+	color: black;
+}
+
+.menu:hover .rightnav {
+	top: 50px;
+}
+
+.menu:hover {
+	background-color: white;
+}
+
+.rightnav h1 {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.rightnav ul li {
+	line-height: 30px;
+}
+
+ul.nav {
+	line-height: 30px;
+}
+
+ul.nav li {
+	padding: 0;
+	height: inherit;
+}
+
+/*.menu li.active {
+	font-weight: bold;
+}*/
+
+.bottomnav li.active {
+	color: black;
+}
+
+article.teaser section {
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+}
+
+.series {
+		width: 66.66%;
+		margin-left: 16.66%;
+	}
+
+.series	img {
+		float: left;
+		padding: 10px;
+	}
+
+.series span {
+	margin-left: 8.33%;
+	position: absolute;
+	margin-top: -35px;
+	color: #7d7d7d;
+	opacity: 0;
+}
+
+.series:hover span {
+	opacity: 1;
+}
+	
+.clearing { 
+		clear: both; 
+		height: 130px;
+	}
+
+
+
+/* ======================================= 
+   media queries
+   ======================================= */
+
+
+/* tablet size */   
+@media screen and (max-width: 48em ) {
+	
+	/* css */
+	
+}   
+    
+/* smartphone size */
+@media screen and (max-width: 36.5em ) {
+	
+	/* css */
+
+}

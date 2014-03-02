@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Brigitta Horvat</title>
+    
+    <meta charset="utf-8">    
+		<meta name="robots" content="index,follow">
+		<meta name="description" content="your description of your site goes here">
+		<meta name="keywords" content="put in some tags">  
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale = 1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/icons/phone.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/tablet.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/retina.jpg">
+    <link rel="stylesheet" href="../css/fitgrid.css">
+    <link rel="stylesheet" href="../css/core.css">
+    
+		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>   
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="logo">Brigitta Horvat<br/>Artists</div>	
+		<div class="menu">
+			<article>
+				<div class="center">
+					<div class="row">		
+						<ul class="nav">
+							<section class="fg2 push3">
+								<a href="#"><li>Alex Howe</li></a>
+								<!--<article class="teaser">
+									<div class="center">
+										<div class="row">
+											<section class="fg5 fg-no-gutter push5"><img src="../photos/image.jpg" alt="" /></section>					
+										</div>
+									</div>
+								</article>-->
+								<a href="#"><li>Andreas Lux</li></a>
+								<!--<article class="teaser">
+									<div class="center">
+										<div class="row">
+											<section class="fg5 fg-no-gutter push5"><img src="../photos/image.jpg" alt="" /></section>					
+										</div>
+									</div>
+								</article>-->
+								<li>Anne Schwalbe</li>
+								<li>Anti Wendel</li>
+								<li>Axel Hoedt</li>
+								<li>Axl Jansen</li>
+								<li>Denis Darzacq</li>
+								</section>
+								<section class="fg2">
+								<li>Felix Bruggemann</li>
+								<li>Felix Friedmann</li>
+								<li>Jonas Unger</li>
+								<li>Kania</li>
+								<li>Marcel Hartmann</li>
+								<li>Mark Borthwick</li>
+								<li>Mark Sanders</li>
+								</section>
+								<section class="fg2">
+								<li>Munetaka</li>
+								<li>Paolo Leone</li>
+								<li>Patrik Voigt</li>
+								<li>Rasmus Morgensen</li>
+								<li>Rene Habermacher</li>
+								<li>Thiemo Sander</li>
+								<li>Thomas von Salomon</li>
+								<li>Walter Homan</li>
+							</section>
+						</ul>
+					</div>
+				</div>	
+			</article>
+			
+			<div class="rightnav">
+				<h1>Photographers<br/>Directors</h1>
+					<ul>
+						<li><a href="about">About</a></li>
+						<li><a href="our-projects">Our Projects</a></li>
+						<li><a href="contact">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+			</div>
+			</div>
+			
+			<section class="fg2 push3 name">About</section>
+			<section class="fg2 push7 name">Clients</section>
+	</header>
+	<!-- header -->
+	<div id="wrapper">	
+	<div class="center">
+		<div class="row">
+		<section class="fg3 push3"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p></section>
+		<section class="fg3 push1">
+		<p><b style="margin-right: 7px;">Editorial</b> Pop - Ramp - Elle - Vogue - Zeit - Wallpaper - Neon - SZ Magazin - Pop - Ramp - Elle - Vogue - Zeit - Wallpaper - Neon - SZ Magazin</p>
+		<p><b style="margin-right: 7px;">Advertising</b> Pop - Ramp - Elle - Vogue - Zeit - Wallpaper - Neon - SZ Magazin - Pop - Ramp - Elle - Vogue - Zeit - Wallpaper - Neon - SZ Magazin</p>
+		<p><b style="margin-right: 7px;">Agencies</b> Pop - Ramp - Elle - Vogue - Zeit - Wallpaper - Neon - SZ Magazin - Pop - Ramp - Elle - Vogue - Zeit - Wallpaper - Neon - SZ Magazin</p>
+		</section>
+		</div>
+		</div>
+	</div>			
+	
+	
+	
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/core.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('ul.nav a').not('.trigger_active').next('.teaser').hide();
+			$('ul.nav a').hover( function() {
+				var trig = $(this);
+				if ( trig.hasClass('trigger_active') ) {
+					trig.next('.teaser').fadeToggle(200);
+					trig.removeClass('trigger_active');
+				} else {
+					$('.trigger_active').next('.teaser').slideToggle();
+					$('.trigger_active').removeClass('trigger_active');
+					trig.next('.teaser').fadeToggle(200);
+					trig.addClass('trigger_active');
+				};
+				return false;
+			});
+			
+			function layout() {
+						divbreite = $('.series').width();
+						console.log(divbreite);
+						
+						bildverhaeltnis = 6.3333333333333;
+									
+					
+						$('.series img').css('height',divbreite/bildverhaeltnis);
+						
+						console.log($('.series img').first().css('height'));			
+						
+					}
+			
+					layout();
+			
+					$(window).resize(function(){
+			
+						layout();
+					});
+		});
+	</script>
+</body>
+</html>
